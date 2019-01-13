@@ -5,10 +5,10 @@
              x:Class="BigramMobile.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Enter Text:" />
+        <Entry x:Name="txtInput" Text="" MinimumHeightRequest="100" HeightRequest="200"/>
+        <Button x:Name="btnSubmit" Text="Submit" Clicked="BtnSubmit_Clicked"/>
+        <Label x:Name="lblOutput"></Label>
     </StackLayout>
 
 </ContentPage>
